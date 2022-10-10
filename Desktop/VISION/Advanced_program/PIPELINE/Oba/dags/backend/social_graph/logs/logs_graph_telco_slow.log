@@ -1,0 +1,193 @@
+:: loading settings :: url = jar:file:/home/patrice.nzi/backup/oba/obavenv/lib/python3.6/site-packages/pyspark/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+Ivy Default Cache set to: /home/patrice.nzi/.ivy2/cache
+The jars for the packages stored in: /home/patrice.nzi/.ivy2/jars
+graphframes#graphframes added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent-a74316e3-a296-44ea-b432-8e440cee8124;1.0
+	confs: [default]
+	found graphframes#graphframes;0.8.2-spark3.1-s_2.12 in local-m2-cache
+:: resolution report :: resolve 408ms :: artifacts dl 26ms
+	:: modules in use:
+	graphframes#graphframes;0.8.2-spark3.1-s_2.12 from local-m2-cache in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   1   |   0   |   0   |   0   ||   1   |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent-a74316e3-a296-44ea-b432-8e440cee8124
+	confs: [default]
+	0 artifacts copied, 1 already retrieved (0kB/9ms)
+22/02/28 09:30:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+22/02/28 09:30:55 INFO SparkContext: Running Spark version 3.1.2
+22/02/28 09:30:55 INFO ResourceUtils: ==============================================================
+22/02/28 09:30:55 INFO ResourceUtils: No custom resources configured for spark.driver.
+22/02/28 09:30:55 INFO ResourceUtils: ==============================================================
+22/02/28 09:30:55 INFO SparkContext: Submitted application: PySpark OBA data extraction om
+22/02/28 09:30:55 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 8192, script: , vendor: , offHeap -> name: offHeap, amount: 2048, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+22/02/28 09:30:55 INFO ResourceProfile: Limiting resource is cpu
+22/02/28 09:30:55 INFO ResourceProfileManager: Added ResourceProfile id: 0
+22/02/28 09:30:55 INFO SecurityManager: Changing view acls to: patrice.nzi
+22/02/28 09:30:55 INFO SecurityManager: Changing modify acls to: patrice.nzi
+22/02/28 09:30:55 INFO SecurityManager: Changing view acls groups to: 
+22/02/28 09:30:55 INFO SecurityManager: Changing modify acls groups to: 
+22/02/28 09:30:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(patrice.nzi); groups with view permissions: Set(); users  with modify permissions: Set(patrice.nzi); groups with modify permissions: Set()
+22/02/28 09:31:20 INFO Utils: Successfully started service 'sparkDriver' on port 44270.
+22/02/28 09:31:20 INFO SparkEnv: Registering MapOutputTracker
+22/02/28 09:31:20 INFO SparkEnv: Registering BlockManagerMaster
+22/02/28 09:31:20 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+22/02/28 09:31:20 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+22/02/28 09:31:20 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+22/02/28 09:31:20 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-4e3adb86-e9a6-4b2a-ae07-64c5f58fba75
+22/02/28 09:31:20 INFO MemoryStore: MemoryStore started with capacity 2.4 GiB
+22/02/28 09:31:20 INFO SparkEnv: Registering OutputCommitCoordinator
+22/02/28 09:31:21 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+22/02/28 09:31:21 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://beta-test-ai:4040
+22/02/28 09:31:21 INFO SparkContext: Added JAR /home/patrice.nzi/backup/oba/jars/terajdbc4.jar at spark://beta-test-ai:44270/jars/terajdbc4.jar with timestamp 1646040655583
+22/02/28 09:31:21 INFO SparkContext: Added file file:///home/patrice.nzi/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar at file:///home/patrice.nzi/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar with timestamp 1646040655583
+22/02/28 09:31:21 INFO Utils: Copying /home/patrice.nzi/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar to /tmp/spark-5db1fec5-5a31-4503-929f-d983d2697190/userFiles-2c3e7db6-2a02-4c6a-b9dc-a69dab691929/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar
+22/02/28 09:31:21 INFO Executor: Starting executor ID driver on host beta-test-ai
+22/02/28 09:31:21 INFO Executor: Fetching file:///home/patrice.nzi/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar with timestamp 1646040655583
+22/02/28 09:31:21 INFO Utils: /home/patrice.nzi/.ivy2/jars/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar has been previously copied to /tmp/spark-5db1fec5-5a31-4503-929f-d983d2697190/userFiles-2c3e7db6-2a02-4c6a-b9dc-a69dab691929/graphframes_graphframes-0.8.2-spark3.1-s_2.12.jar
+22/02/28 09:31:21 INFO Executor: Fetching spark://beta-test-ai:44270/jars/terajdbc4.jar with timestamp 1646040655583
+22/02/28 09:31:21 INFO TransportClientFactory: Successfully created connection to beta-test-ai/10.242.36.146:44270 after 65 ms (0 ms spent in bootstraps)
+22/02/28 09:31:21 INFO Utils: Fetching spark://beta-test-ai:44270/jars/terajdbc4.jar to /tmp/spark-5db1fec5-5a31-4503-929f-d983d2697190/userFiles-2c3e7db6-2a02-4c6a-b9dc-a69dab691929/fetchFileTemp1441541895151615593.tmp
+22/02/28 09:31:21 INFO Executor: Adding file:/tmp/spark-5db1fec5-5a31-4503-929f-d983d2697190/userFiles-2c3e7db6-2a02-4c6a-b9dc-a69dab691929/terajdbc4.jar to class loader
+22/02/28 09:31:21 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40529.
+22/02/28 09:31:21 INFO NettyBlockTransferService: Server created on beta-test-ai:40529
+22/02/28 09:31:21 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+22/02/28 09:31:21 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, beta-test-ai, 40529, None)
+22/02/28 09:31:21 INFO BlockManagerMasterEndpoint: Registering block manager beta-test-ai:40529 with 2.4 GiB RAM, BlockManagerId(driver, beta-test-ai, 40529, None)
+22/02/28 09:31:21 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, beta-test-ai, 40529, None)
+22/02/28 09:31:21 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, beta-test-ai, 40529, None)
+22/02/28 09:31:22 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir ('file:/home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/spark-warehouse/').
+22/02/28 09:31:22 INFO SharedState: Warehouse path is 'file:/home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/spark-warehouse/'.
+generate_dates: right_date: iteration: 0 20220213
+generate_dates: left_date: iteration: 0 20220207
+generate_dates: right_date: iteration: 1 20220206
+generate_dates: left_date: iteration: 1 20220131
+generate_dates: right_date: iteration: 2 20220130
+generate_dates: left_date: iteration: 2 20220124
+generate_dates: right_date: iteration: 3 20220123
+generate_dates: left_date: iteration: 3 20220117
+generate_dates: right_date: iteration: 4 20220116
+generate_dates: left_date: iteration: 4 20220110
+generate_dates: right_date: iteration: 5 20220109
+generate_dates: left_date: iteration: 5 20220103
+generate_dates: right_date: iteration: 6 20220102
+generate_dates: left_date: iteration: 6 20211227
+generate_dates: right_date: iteration: 7 20211226
+generate_dates: left_date: iteration: 7 20211220
+generate_dates: right_date: iteration: 8 20211219
+generate_dates: left_date: iteration: 8 20211213
+generate_dates: right_date: iteration: 9 20211212
+generate_dates: left_date: iteration: 9 20211206
+generate_dates: right_date: iteration: 10 20211205
+generate_dates: left_date: iteration: 10 20211129
+generate_dates: right_date: iteration: 11 20211128
+generate_dates: left_date: iteration: 11 20211122
+generate_dates: right_date: iteration: 12 20211121
+generate_dates: left_date: iteration: 12 20211115
+generate_dates: right_date: iteration: 13 20211114
+generate_dates: left_date: iteration: 13 20211108
+generate_dates: right_date: iteration: 14 20211107
+generate_dates: left_date: iteration: 14 20211101
+generate_dates: right_date: iteration: 15 20211031
+generate_dates: left_date: iteration: 15 20211025
+generate_dates: right_date: iteration: 16 20211024
+generate_dates: left_date: iteration: 16 20211018
+generate_dates: right_date: iteration: 17 20211017
+generate_dates: left_date: iteration: 17 20211011
+generate_dates: right_date: iteration: 18 20211010
+generate_dates: left_date: iteration: 18 20211004
+generate_dates: right_date: iteration: 19 20211003
+generate_dates: left_date: iteration: 19 20210927
+generate_dates: right_date: iteration: 20 20210926
+generate_dates: left_date: iteration: 20 20210920
+generate_dates: right_date: iteration: 21 20210919
+generate_dates: left_date: iteration: 21 20210913
+generate_dates: right_date: iteration: 22 20210912
+generate_dates: left_date: iteration: 22 20210906
+generate_dates: right_date: iteration: 23 20210905
+generate_dates: left_date: iteration: 23 20210830
+generate_dates: right_date: iteration: 24 20210829
+generate_dates: left_date: iteration: 24 20210823
+generate_dates: right_date: iteration: 25 20210822
+generate_dates: left_date: iteration: 25 20210816
+22/02/28 09:32:15 INFO CodeGenerator: Code generated in 308.943821 ms
+22/02/28 09:32:15 INFO CodeGenerator: Code generated in 26.790661 ms
+22/02/28 09:32:15 INFO CodeGenerator: Code generated in 27.164928 ms
+22/02/28 09:32:15 INFO CodeGenerator: Code generated in 26.894401 ms
+22/02/28 09:32:15 INFO CodeGenerator: Code generated in 19.842568 ms
+22/02/28 09:32:15 INFO SparkContext: Starting job: toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90
+22/02/28 09:32:15 INFO DAGScheduler: Registering RDD 12 (toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90) as input to shuffle 0
+22/02/28 09:32:15 INFO DAGScheduler: Registering RDD 16 (toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90) as input to shuffle 1
+22/02/28 09:32:15 INFO DAGScheduler: Registering RDD 22 (toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90) as input to shuffle 2
+22/02/28 09:32:15 INFO DAGScheduler: Got job 0 (toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90) with 200 output partitions
+22/02/28 09:32:15 INFO DAGScheduler: Final stage: ResultStage 3 (toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90)
+22/02/28 09:32:15 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+22/02/28 09:32:15 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 2)
+22/02/28 09:32:15 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[12] at toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90), which has no missing parents
+22/02/28 09:32:15 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 17.0 KiB, free 2.4 GiB)
+22/02/28 09:32:15 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 8.5 KiB, free 2.4 GiB)
+22/02/28 09:32:15 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on beta-test-ai:40529 (size: 8.5 KiB, free: 2.4 GiB)
+22/02/28 09:32:15 INFO SparkContext: Created broadcast 0 from broadcast at DAGScheduler.scala:1388
+22/02/28 09:32:15 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[12] at toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90) (first 15 tasks are for partitions Vector(0))
+22/02/28 09:32:15 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks resource profile 0
+22/02/28 09:32:15 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[16] at toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90), which has no missing parents
+22/02/28 09:32:15 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 14.0 KiB, free 2.4 GiB)
+22/02/28 09:32:15 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 7.4 KiB, free 2.4 GiB)
+22/02/28 09:32:15 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on beta-test-ai:40529 (size: 7.4 KiB, free: 2.4 GiB)
+22/02/28 09:32:15 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1388
+22/02/28 09:32:15 INFO DAGScheduler: Submitting 8 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[16] at toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90) (first 15 tasks are for partitions Vector(0, 1, 2, 3, 4, 5, 6, 7))
+22/02/28 09:32:15 INFO TaskSchedulerImpl: Adding task set 1.0 with 8 tasks resource profile 0
+22/02/28 09:32:15 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (beta-test-ai, executor driver, partition 0, PROCESS_LOCAL, 4288 bytes) taskResourceAssignments Map()
+22/02/28 09:32:15 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1) (beta-test-ai, executor driver, partition 0, PROCESS_LOCAL, 928571 bytes) taskResourceAssignments Map()
+22/02/28 09:32:15 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 2) (beta-test-ai, executor driver, partition 1, PROCESS_LOCAL, 928570 bytes) taskResourceAssignments Map()
+22/02/28 09:32:15 INFO TaskSetManager: Starting task 2.0 in stage 1.0 (TID 3) (beta-test-ai, executor driver, partition 2, PROCESS_LOCAL, 928570 bytes) taskResourceAssignments Map()
+22/02/28 09:32:15 INFO TaskSetManager: Starting task 3.0 in stage 1.0 (TID 4) (beta-test-ai, executor driver, partition 3, PROCESS_LOCAL, 938838 bytes) taskResourceAssignments Map()
+22/02/28 09:32:15 INFO TaskSetManager: Starting task 4.0 in stage 1.0 (TID 5) (beta-test-ai, executor driver, partition 4, PROCESS_LOCAL, 928570 bytes) taskResourceAssignments Map()
+22/02/28 09:32:15 INFO TaskSetManager: Starting task 5.0 in stage 1.0 (TID 6) (beta-test-ai, executor driver, partition 5, PROCESS_LOCAL, 928570 bytes) taskResourceAssignments Map()
+22/02/28 09:32:15 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+22/02/28 09:32:15 INFO TaskSetManager: Starting task 6.0 in stage 1.0 (TID 7) (beta-test-ai, executor driver, partition 6, PROCESS_LOCAL, 928570 bytes) taskResourceAssignments Map()
+22/02/28 09:32:15 INFO Executor: Running task 1.0 in stage 1.0 (TID 2)
+22/02/28 09:32:15 INFO Executor: Running task 2.0 in stage 1.0 (TID 3)
+22/02/28 09:32:15 INFO Executor: Running task 3.0 in stage 1.0 (TID 4)
+22/02/28 09:32:15 INFO Executor: Running task 4.0 in stage 1.0 (TID 5)
+22/02/28 09:32:15 INFO Executor: Running task 5.0 in stage 1.0 (TID 6)
+22/02/28 09:32:15 INFO Executor: Running task 6.0 in stage 1.0 (TID 7)
+22/02/28 09:32:15 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+22/02/28 09:32:17 INFO CodeGenerator: Code generated in 46.602479 ms
+22/02/28 09:32:18 INFO PythonRunner: Times: total = 986, boot = 778, init = 52, finish = 156
+22/02/28 09:32:18 INFO PythonRunner: Times: total = 921, boot = 731, init = 42, finish = 148
+22/02/28 09:32:18 INFO PythonRunner: Times: total = 945, boot = 742, init = 19, finish = 184
+22/02/28 09:32:18 INFO PythonRunner: Times: total = 1039, boot = 796, init = 64, finish = 179
+22/02/28 09:32:18 INFO PythonRunner: Times: total = 892, boot = 745, init = 15, finish = 132
+22/02/28 09:32:18 INFO PythonRunner: Times: total = 923, boot = 751, init = 46, finish = 126
+22/02/28 09:32:18 INFO PythonRunner: Times: total = 977, boot = 750, init = 47, finish = 180
+22/02/28 09:32:18 INFO Executor: Finished task 6.0 in stage 1.0 (TID 7). 2473 bytes result sent to driver
+22/02/28 09:32:18 INFO Executor: Finished task 3.0 in stage 1.0 (TID 4). 2473 bytes result sent to driver
+22/02/28 09:32:18 INFO Executor: Finished task 1.0 in stage 1.0 (TID 2). 2473 bytes result sent to driver
+22/02/28 09:32:18 INFO Executor: Finished task 4.0 in stage 1.0 (TID 5). 2473 bytes result sent to driver
+22/02/28 09:32:18 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 2473 bytes result sent to driver
+22/02/28 09:32:18 INFO Executor: Finished task 5.0 in stage 1.0 (TID 6). 2430 bytes result sent to driver
+22/02/28 09:32:18 INFO Executor: Finished task 2.0 in stage 1.0 (TID 3). 2473 bytes result sent to driver
+22/02/28 09:32:18 INFO TaskSetManager: Starting task 7.0 in stage 1.0 (TID 8) (beta-test-ai, executor driver, partition 7, PROCESS_LOCAL, 932106 bytes) taskResourceAssignments Map()
+22/02/28 09:32:18 INFO Executor: Running task 7.0 in stage 1.0 (TID 8)
+22/02/28 09:32:18 INFO TaskSetManager: Finished task 3.0 in stage 1.0 (TID 4) in 2725 ms on beta-test-ai (executor driver) (1/8)
+22/02/28 09:32:18 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 2) in 2736 ms on beta-test-ai (executor driver) (2/8)
+22/02/28 09:32:18 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 2741 ms on beta-test-ai (executor driver) (3/8)
+22/02/28 09:32:18 INFO TaskSetManager: Finished task 5.0 in stage 1.0 (TID 6) in 2729 ms on beta-test-ai (executor driver) (4/8)
+22/02/28 09:32:18 INFO TaskSetManager: Finished task 2.0 in stage 1.0 (TID 3) in 2736 ms on beta-test-ai (executor driver) (5/8)
+22/02/28 09:32:18 INFO TaskSetManager: Finished task 4.0 in stage 1.0 (TID 5) in 2732 ms on beta-test-ai (executor driver) (6/8)
+22/02/28 09:32:18 INFO TaskSetManager: Finished task 6.0 in stage 1.0 (TID 7) in 2728 ms on beta-test-ai (executor driver) (7/8)
+22/02/28 09:32:18 INFO PythonAccumulatorV2: Connected to AccumulatorServer at host: 127.0.0.1 port: 55584
+22/02/28 09:32:18 INFO PythonRunner: Times: total = 94, boot = -1228, init = 1233, finish = 89
+22/02/28 09:32:18 INFO Executor: Finished task 7.0 in stage 1.0 (TID 8). 2387 bytes result sent to driver
+22/02/28 09:32:18 INFO TaskSetManager: Finished task 7.0 in stage 1.0 (TID 8) in 196 ms on beta-test-ai (executor driver) (8/8)
+22/02/28 09:32:18 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+22/02/28 09:32:18 INFO DAGScheduler: ShuffleMapStage 1 (toPandas at /home/patrice.nzi/backup/oba/airflow_prod/dags/backend/social_graph/extract_and_deliver_telco_graph_indicators_slow.py:90) finished in 2,965 s
+22/02/28 09:32:18 INFO DAGScheduler: looking for newly runnable stages
+22/02/28 09:32:18 INFO DAGScheduler: running: Set(ShuffleMapStage 0)
+22/02/28 09:32:18 INFO DAGScheduler: waiting: Set(ShuffleMapStage 2, ResultStage 3)
+22/02/28 09:32:18 INFO DAGScheduler: failed: Set()
